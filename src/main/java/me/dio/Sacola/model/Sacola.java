@@ -26,6 +26,7 @@ public class Sacola {
     private Cliente cliente;
     @OneToMany(cascade = CascadeType.ALL)
     private List<Item> itens;
+    private double valorTotal;
     @Enumerated
     private FormaPagamento FormaPagamento;
     private boolean fechada;
